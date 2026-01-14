@@ -1,3 +1,14 @@
+
+fetch("https://aadharshield-backend.onrender.com/health")
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById("status").innerText = "🟢 Backend Online";
+    document.getElementById("status").className = "status ok";
+  })
+  .catch(() => {
+    document.getElementById("status").innerText = "🔴 Backend Offline";
+    document.getElementById("status").className = "status err";
+  });
 async function checkRisk() {
   const aadhaar = document.getElementById("aadhaar").value;
   const location = document.getElementById("location").value;
