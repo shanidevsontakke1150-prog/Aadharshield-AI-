@@ -31,3 +31,16 @@ result {
   font-size: 18px;
   font-weight: bold;
 }
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.status {
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+.status.ok { color: green; }
+.status.err { color: red; }
