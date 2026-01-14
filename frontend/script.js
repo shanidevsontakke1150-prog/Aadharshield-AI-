@@ -4,7 +4,7 @@ async function checkRisk() {
   const device = document.getElementById("device").value;
   const service = document.getElementById("service").value;
 
-  const res = await fetch("http://localhost:5000/check", {
+  const res = await fetch("https://aadharshield-backend.onrender.com/check", {
     method: "POST",
     headers: {"Content-Type": "application/json"},
     body: JSON.stringify({
